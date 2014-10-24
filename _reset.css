@@ -1,0 +1,246 @@
+/***
+* This framework is not really a framework and designed to be minimal and
+*     bare-bones, just enough rules to fix the things that consistently annoy me
+*     the most... a smart, minimal, and SANE reset plus a few tweaks.
+*
+* If these comments are too much for you to read and/or understand then you
+*     are not qualified to make any changes in the files for this project.
+*
+* Vstrap is built on top of what i think are the best rules from the normalize and
+*     h5bp projects but not ALL of their rules.
+*
+* If you want more information about the rules from those project the links are
+*     in the comments for you to learn more about them.
+*
+* THE HIGH-LEVEL RULES:
+* The base font size is 100%.  100% = 16px in desktop browsers.
+* 1em = 16px usually (works just like percent, will compound) and 1rem should
+*     always = 16px, rem does not compound.
+* This font-size ratio sets the tone for the design.
+* Any pixel (px) units should be divisible evenly by 16, or at least 8, and at worst
+*     (hint: rarely go this low) by 4.
+* I call this a base16 system... but I may be misusing this term.
+* 1px border styles are allowed in my base16 system.
+* Boxes should never* have their dimensions defined in pixel units, this is more
+*    relevant than ever with how 1px does not equal 1px across all devices!
+* No height set on anything that contains text!
+*
+*
+* THE LOW-LEVEL RULES:
+* Most colors should be set using HSLA values unless they are greyscale.
+* Color changing effects that are greyscale based shadows and highlights
+*     may be set using RGBA values.
+* Greyscale colors that have no need for alpha transparency are fine to set
+*    using hex color codes.
+*
+* BROWSER SUPPORT SCOPE:
+* - last 2 versions of IE & Safari on OSX
+* - most current version of FF & Chrome
+* - mobile browser are NOT within the scope for the admin section of HITE...
+*      however I do not expect anything to fall apart in mobile devices with the
+*      rules and guidelines I try to adhere to.
+*
+* These comments at the top should be 80 columns wide... I don't mind longer
+*     length columns though because word/line wrapping in modern text editors
+*     is a nice feature.
+*
+* Last updated September 2014.
+*
+* - vs
+***/
+
+/*** a comment starting and ending with *** like this marks a section of
+related/grouped rules ***/
+/** a comment starting and ending with ** like this is for a subsection of
+grouped rules **/
+/* a comment starting and ending with * like this is something specific to the
+rule(s) it is closest to */
+
+
+/****** START Vstrap 0.14.9 ***/
+/*** modified for HITE admin section vs2014.09.19 ***/
+/* div, span, article, section, */ *, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}/* no support for less than ie8 */
+
+/* @import prevents parallell downloads, use <link> */
+/* @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic|Noto+Serif); */
+
+/*** START normalize 3.0.1 - http://necolas.github.io/normalize.css/ - DO NOT CHANGE these rules unless your are updating them to a newer version of normalize.css, most original comments removed to save bytes in this file ***/
+html{font-family: 'Noto Sans', sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */}
+body{margin: 0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{display: block;}
+audio, canvas, progress, video{display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */}
+audio:not([controls]){display: none; height: 0;}
+[hidden], template{display: none;}
+abbr[title]{border-bottom: 1px dotted;}
+b, strong{font-weight: bold;}
+dfn{font-style: italic;}
+mark{background: #ff0; color: #000;}
+small{font-size: 80%;}
+img{border: 0;}
+svg:not(:root){overflow: hidden;}
+figure{margin: 1em 40;}
+hr{-moz-box-sizing: content-box; box-sizing: content-box; height: 0;}/*not supported before ie8*/
+pre{overflow: auto;}
+code, kbd, pre, samp{font-family: monospace, monospace; font-size: 1rem;}
+button, input, optgroup, select, textarea{color: inherit; /* 1 */ font: inherit; /* 2 */ margin: 0; /* 3 */}
+button{overflow: visible;}
+button, select{text-transform: none;}
+button, html input[type="button"], /* 1 */ input[type="reset"], input[type="submit"]{-webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */}
+button[disabled], html input[disabled]{cursor: default;}
+button::-moz-focus-inner, input::-moz-focus-inner{border: 0; padding: 0;}
+input{line-height: normal;}
+input[type="checkbox"], input[type="radio"]{box-sizing: border-box; /* 1 */ padding: 0; /* 2 */}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button{height: auto;}
+input[type="search"]{-webkit-appearance: textfield; /* 1 */ -moz-box-sizing: content-box; -webkit-box-sizing: content-box; /* 2 */ box-sizing: content-box;}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}
+fieldset{border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em;}
+legend{border: 0; /* 1 */ padding: 0; /* 2 */}
+textarea{overflow: auto;}
+optgroup{font-weight: bold;}
+td, th{padding: 0;}
+/*** END normalize 3.0.1 ***/
+
+/*** START h5bp 4.3.0  - http://h5bp.com - do not change these rules unless your are updating them to a newer version of h5bp ***/
+/* Remove the gap between images, videos, audio and canvas and the bottom of their containers: h5bp.com/i/440 */
+audio, canvas, img, svg, video, input{vertical-align: middle;}
+/*** END h5bp 4.3.0 ***/
+
+/*** START typography ***/
+html {height: 100%; font-size:100.01%;
+font-family: 'Noto Sans', sans-serif;
+-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; /* Prevent iOS text size adjust after orientation change, without disabling user zoom. */}
+body {height:100%; line-height:1.4; color:#1a1a1a;background:white;z-index:0;}
+body, input, button, textarea, select {font-family: "Lucida Sans Unicode","Lucida Grande","Lucida Sans",Verdana,Arial, sans-serif;  /*letter-spacing:1px;*/}
+body, input, button, textarea, select {font-family: 'Noto Sans', sans-serif;}
+/* h1, h2, h3, h4, h5, h6, legend {font-family: Georgia, "DejaVu Serif", serif; letter-spacing: 1px;} */
+h1, h2, h3, h4, h5, /* h6, */ legend, TABLE TH[scope="col"] {font-family:"Noto Serif", serif; letter-spacing: 1px;}
+pre, tt, code, kbd, samp, var {font-family: "Courier New", Courier, monospace;}
+b{font-weight:normal;}
+
+/* avoid browser default inconsistent heading font-sizes - and pre/code/kbd too */
+h1, h2, h3, h4, h5, h6, pre, code, kbd {font-size:100%; }
+h1, h2, h3, h4, h5 /* , h6 */{font-weight:700;}
+h6{font-weight:400;}
+/*ensure font-weight heritage for headings with links inside*/
+h1 a, h2 a, h3 a,h4 a, h5 a, h6 a { font-weight: inherit;}
+h1 {font-size: 2.625rem;}/*golden 16 main 42 title*/
+h2 {font-size: 1.625rem;}/*golden 16 main 26 headline*/
+h3 {font-size: 1.25rem;}/*golden 16 main sub-headline*/
+h4 {font-size: 1.2rem;}
+h5 {font-size: 1.1rem;}
+h6 {font-size: 1rem;}
+/* Address inconsistent and variable font size in all browsers. */
+small {font-size: 80%;}
+/*SUP and SUB fix to maintain line-height*/sup, sub {height: 0;line-height: 1;vertical-align: baseline;_vertical-align: bottom;position: relative;font-size:smaller;}sup {bottom: 1ex;}sub {top: .5ex;}
+th, dt, b, strong{font-weight:700;}
+/* This should be self explanatory */blockquote, q, em, cite, dfn, i, cite, var {font-style: italic;}
+/* to prevent some browsers from inserting quotes on "q" and "p" ("p" in blockquotes)*/blockquote p:before, blockquote p:after, q:before, q:after {content: '';}blockquote, q {quotes: "" "";}
+/* link underlines tend to make hypertext less readable, because underlines obscure the shapes of the lower halves of words */:link,:visited,ins {text-decoration:none;}
+/*** END typography ***/
+
+/* de-italicize address,abbr */address,abbr {font-style:normal;}
+abbr[title] {border-bottom: 1px dotted;}
+
+/*** START tables ***/
+/* tables still need 'cellspacing="0"' and 'cellpadding="0"' in the markup */table {border-collapse: collapse;border-spacing: 0;}
+/* all th should be centered unless they are in tbody (table body) */
+th {text-align: center;}tbody th {text-align: left;}caption, td {text-align: left;font-weight: normal;}
+/* caption and summary are very important for tabular data but because caption is nearly impossible to style across browsers many authors do not use it or use display:none to "hide" it (which is almost the same as not using it).
+ * so to prevent such workaround, I am positioning this element off-screen
+ */caption{position: absolute;left: -999em;}
+/*** END tables ***/
+
+/*** START rules to make LISTs consistant across all browsers ***/
+/* give lists consistant style - IE uses margin-left FF uses padding-left */
+ol, ul{margin:0;padding:0;line-height:1.5;}
+ol{list-style:decimal;}
+ol ol{list-style:lower-alpha;}
+ol ol ol{list-style:upper-roman;}
+ul{list-style:disc;}
+ul ul{list-style:circle;}
+ul ul ul{list-style:square;}
+dl, ol, ul {margin-top:.25em;margin-left: 3em; padding-left: 0em; list-style-position:outside;}
+/* nested lists get reduced margins */
+ul ul , ol ol, ol ul, ul ol {margin-left: 1em;list-style-position:outside;}
+ol ol ul, ul ol ul, ol ol ol {margin-left: 1em;list-style-position:outside;}
+li{margin:0 1em .5em 0;padding:0;text-indent:0em;}
+dt{/*float:left;clear:left;*/font-weight:bold; margin-right:.5em;}
+dd{margin-left:0;padding-left:0;-webkit-margin-start:0;font-weight:normal;margin-bottom:.5em;}
+li>ul, li>ol{margin-top:.25em;/*margin-bottom:-.5em;*/padding-bottom:-.25em;}
+ul.none{list-style-type:none;}
+/*** END rules to make LISTs consistent across all browsers ***/
+
+/*** START form elements ***/
+button,input,optgroup,select,textarea {color: inherit; font: inherit; margin: 0;}
+/* Address 'overflow' set to 'hidden' in IE 8/9/10. */
+button {overflow: visible;}
+button,select {text-transform: none;}
+button,html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer;}
+button[disabled], html input[disabled] {cursor: default;}
+button::-moz-focus-inner, input::-moz-focus-inner {border: 0; padding: 0;}
+/* Address Firefox 4+ setting 'line-height' on 'input' using '!important' in the UA stylesheet. */
+input {line-height: normal;}
+input[type="checkbox"], input[type="radio"] {box-sizing: border-box;  padding: 0;}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {height: auto;}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
+fieldset {margin: 0 2px; padding: 0.35em 0.625em 0.75em; border: 1px solid #c0c0c0;}
+legend {padding: .25em .5em; border: inherit; background:inherit;}
+textarea {overflow: auto;}
+/* Don't inherit the 'font-weight' (applied by a rule above). NOTE: the default cannot safely be changed in Chrome and Safari on OS X. */
+optgroup {font-weight: bold;}
+/* get rid of ugly box border in IE*/
+input[type="radio"]{margin:0;padding:0;border:0;background-color:transparent;}
+/* align checkboxes, radios, text inputs with their label - i'm having to change to "middle" way too often vs2014.09.20 */
+/* input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; } */
+.ie6 input{ vertical-align: text-bottom; }
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], input[type=checkbox], input[type=radio], button { cursor: pointer;}
+/*buttons with multiple lines look dumb and usually wrong*/
+input[type=button], input[type=submit], button{white-space:nowrap;}
+/* required inputs */
+/* input:required, select:required, textarea:required{border-color:red;} */
+label.Req:before{content:"*"; display:inline; margin-right:8px; color:red;font-weight:bold;font-size:200%;vertical-align:text-top;text-shadow: 1px 1px 4px rgba(0,0,0,.5);}
+/* validation - don't mark invalid while typing */
+input:not(:focus):invalid, textarea:not(:focus):invalid {outline: 2px solid red;}
+input:focus:invalid, textarea:focus:invalid {outline: 2px solid blue;}
+/*** END form elements ***/
+
+/*** START links ***/
+/* remember to define focus styles! */:focus {outline: 0;}
+/* who thought blue linked image borders were a good idea? */a img,:link img,:visited img, a object,:link object,:visited object{ border:0; }
+/* some long-arse links refused to break nicely, this fixes */A{word-wrap:break-word;}
+/* to prevent a gap from showing below images in some browsers */img {vertical-align: bottom;}
+/* styling for links and visited links as well as for links in a hovered, focus, and active state
+ * make sure to KEEP these rules in that order, with :active being last
+ * text-decoration: none is to make the links more legible while they are in a hovered, focus or active state
+ * link underlines tend to make hypertext less readable, because underlines obscure the shapes of the lower halves of words
+ * a:focus and :focus are used to help keyboard users, you may change their styling, but make sure to give users a visual clue of the element's state.
+ * outline:none used with the pseudo-class :hover is to avoid outline when a user clicks on links
+ * note that these last rules do not do anything in IE as this browser does not support "outline"
+ */
+a{background: transparent;}
+a:link {color: #0000FF;text-decoration:none;}
+a:visited {color: #800080;text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:focus {text-decoration: none;}
+a:focus/* , :focus */ { outline: 2px solid blue;
+/* background-color:rgba(0,0,0,.125); */
+}
+a:hover,a:active {outline: 0;}
+a:active{color: #FF0000; /*prevent transitions on click*/transition: none;}
+/*** END links ***/
+
+iframe{width:100%;}
+/* Prevent modern browsers from displaying 'audio' without controls. + Remove excess height in iOS 5 devices. */
+audio:not([controls]) {display: none;height: 0;}
+/* Correct overflow displayed oddly in IE 9. */
+svg:not(:root) {overflow: hidden;}
+
+/****** END Vstrap 0.14.9***/
