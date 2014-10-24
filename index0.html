@@ -12,17 +12,42 @@
 		color:#ffffff;
 		background:#191919;
 	}
-	table td{vertical-align:top;}
-	.wtvtable{height:100%;}
+	table td {
+		vertical-align:top;
+	}
+	.wtvtable {
+		height:calc(100% - 50px);
+	}
 	.wtvside {
 		width:10%;
 		height:95%;
 		background:#6699cc;
 	}
-	.logo{display:block;margin:1em auto;}
+	.logo {
+		display:block;
+		margin:1em auto;
+	}
 	.wtvmain {
 		width:89%;
 		height:95%;
+	}
+	.wtvmain>iframe{height:100%;}
+	.wtvfooter {
+		background:#404040;
+		height:50px;
+		padding-top:4px;
+		color:#E7CE4A;
+	}
+	.wtvfooter>marquee {
+		background:#000;
+		height:40px;
+		line-height:40px;
+		width:855px;
+	}
+	.wtvfooter>img {
+		float:right;
+		position:relative;
+		top:4px;
 	}
 	</style>
 </head>
@@ -30,9 +55,13 @@
 	<table class="wtvtable" width="100%" border="0" cellspacing="0" cellpadding="0">
 		<tr>
 			<td class="wtvside"><img src="i/webtvlogo.png" class="logo" width="87" height="67">
-<hr>sidebar</td>
-			<td class="wtvmain">main</td>
+				<hr>sidebar</td>
+			<td class="wtvmain">
+				<iframe src="http://turdinc.kicks-ass.net/Msntv/index4.html" id="wtvmain" frameborder="0"></iframe></td>
 		</tr>
 	</table>
+	<div class="wtvfooter">
+		<marquee behavior="" direction="">YO yo yo yo yo yo yo yo yo yo yo</marquee><img src="i/status.gif" height="40" width="49">
+	</div>
 </body>
 </html>
