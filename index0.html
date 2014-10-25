@@ -16,13 +16,15 @@
 		vertical-align:top;
 	}
 	.wtvtable {
-		height:calc(100% - 50px);
+		height:calc(100% - 36px);/*makes room for .wtvfooter*/
 	}
 	.wtvside {
 		width:10%;
 		height:95%;
 		background:#6699cc;
 	}
+	.wtvside ul{list-style-type:none;margin:0;margin-left:4px;}
+	.wtvside li{margin:0;}
 	.logo {
 		display:block;
 		margin:1em auto;
@@ -31,23 +33,36 @@
 		width:89%;
 		height:95%;
 	}
-	.wtvmain>iframe{height:100%;}
+	.wtvmain>iframe {
+		height:100%;
+	}
 	.wtvfooter {
 		background:#404040;
-		height:50px;
-		padding-top:4px;
+		height:35px;
+		padding-top:7px;
+		padding-bottom:4px;
 		color:#E7CE4A;
+		background-color: #4E4E4E;
+		background-image: linear-gradient(to right, #666666, #333333);
+		border-top:1px solid rgba(255,255,255,.5);
+		box-shadow:0 0 0px 1px rgba(0,0,0,.5);
 	}
 	.wtvfooter>marquee {
 		background:#000;
-		height:40px;
-		line-height:40px;
+		height:24px;
+		line-height:24px;
 		width:855px;
+		border-radius:8px;
+		margin-left:8px;
+		background-color: #161616;
+	  background-image: linear-gradient(to right, #2A2A2A, #000000);
+	  text-shadow: 1px 1px 1px #000;
+
 	}
 	.wtvfooter>img {
 		float:right;
-		position:relative;
-		top:4px;
+		margin-right:.5em;
+		margin-top:-2px;
 	}
 	</style>
 </head>
@@ -55,13 +70,20 @@
 	<table class="wtvtable" width="100%" border="0" cellspacing="0" cellpadding="0">
 		<tr>
 			<td class="wtvside"><img src="i/webtvlogo.png" class="logo" width="87" height="67">
-				<hr>sidebar</td>
+				<hr><p>sidebar</p><ul>
+					<li><a href=#>111</a></li>
+					<li><a href="#">222</a></li>
+					<li>333</li>
+					<li>444</li>
+					<li>555</li>
+				</ul></td>
 			<td class="wtvmain">
-				<iframe src="http://turdinc.kicks-ass.net/Msntv/index4.html" id="wtvmain" frameborder="0"></iframe></td>
+				<iframe src="index4.html" id="wtvmain" frameborder="0"></iframe>
+			</td>
 		</tr>
 	</table>
 	<div class="wtvfooter">
-		<marquee behavior="" direction="">YO yo yo yo yo yo yo yo yo yo yo</marquee><img src="i/status.gif" height="40" width="49">
+		<marquee behavior="" direction="">YO yo yo yo yo yo yo yo yo yo yo</marquee><img src="i/status.gif" height="26" width="32">
 	</div>
 </body>
 </html>

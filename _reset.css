@@ -110,10 +110,9 @@ html {height: 100%; font-size:100.01%;
 font-family: 'Noto Sans', sans-serif;
 -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; /* Prevent iOS text size adjust after orientation change, without disabling user zoom. */}
 body {height:100%; line-height:1.4; color:#1a1a1a;background:white;z-index:0;}
-body, input, button, textarea, select {font-family: "Lucida Sans Unicode","Lucida Grande","Lucida Sans",Verdana,Arial, sans-serif;  /*letter-spacing:1px;*/}
-body, input, button, textarea, select {font-family: 'Noto Sans', sans-serif;}
-/* h1, h2, h3, h4, h5, h6, legend {font-family: Georgia, "DejaVu Serif", serif; letter-spacing: 1px;} */
-h1, h2, h3, h4, h5, /* h6, */ legend, TABLE TH[scope="col"] {font-family:"Noto Serif", serif; letter-spacing: 1px;}
+body, input, button, textarea, select {font-family: Georgia, "DejaVu Serif", serif;}
+h1, h2, h3, h4, h5, h6, legend, marquee {font-family: "Lucida Sans Unicode","Lucida Grande","Lucida Sans",Verdana,Arial, sans-serif;letter-spacing: 1px;}
+
 pre, tt, code, kbd, samp, var {font-family: "Courier New", Courier, monospace;}
 b{font-weight:normal;}
 
@@ -123,9 +122,9 @@ h1, h2, h3, h4, h5 /* , h6 */{font-weight:700;}
 h6{font-weight:400;}
 /*ensure font-weight heritage for headings with links inside*/
 h1 a, h2 a, h3 a,h4 a, h5 a, h6 a { font-weight: inherit;}
-h1 {font-size: 2.625rem;}/*golden 16 main 42 title*/
-h2 {font-size: 1.625rem;}/*golden 16 main 26 headline*/
-h3 {font-size: 1.25rem;}/*golden 16 main sub-headline*/
+h1 {background:#6699CC;color:white;text-transform:uppercase;font-size: 1.625rem;}/*golden 16 main 42 title*/
+h2 {background:#6699CC;color:white;text-transform:uppercase;font-size: 1.25rem;}/*golden 16 main 26 headline*/
+h3 {font-size: 1.2rem;}/*golden 16 main sub-headline*/
 h4 {font-size: 1.2rem;}
 h5 {font-size: 1.1rem;}
 h6 {font-size: 1rem;}
@@ -225,16 +224,40 @@ input:focus:invalid, textarea:focus:invalid {outline: 2px solid blue;}
  * outline:none used with the pseudo-class :hover is to avoid outline when a user clicks on links
  * note that these last rules do not do anything in IE as this browser does not support "outline"
  */
-a{background: transparent;}
-a:link {color: #0000FF;text-decoration:none;}
-a:visited {color: #800080;text-decoration: none;}
-a:hover {text-decoration: underline;}
+a{background: transparent;padding:2px;}
+a:link {/*color: #0000FF;*/color:#36d5ff;text-decoration:none;}
+a:visited {/*color: #800080;*/color:#9a36ff;text-decoration: none;}
+a:hover {text-decoration: none;}
 a:focus {text-decoration: none;}
-a:focus/* , :focus */ { outline: 2px solid blue;
+a:focus/* , :focus */ { /*outline: 2px solid blue;*/outline:none;
 /* background-color:rgba(0,0,0,.125); */
 }
-a:hover,a:active {outline: 0;}
-a:active{color: #FF0000; /*prevent transitions on click*/transition: none;}
+a:focus, a:hover,a:active {/*outline: 2px solid orange;*/border-radius:1px;
+-webkit-box-shadow: 0px 0px 0 3px #E4BB00,
+        							-2px -2px 3px 1px white,
+        							2px 2px 3px 1px black,
+        							inset -1px -1px 1px 1px rgba(255,255,255,.666),
+        							inset 1px 1px 1px 1px rgba(0,0,0,.5); /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+          box-shadow: 0px 0px 0 3px #E4BB00,
+        							-2px -2px 3px 1px white,
+        							2px 2px 3px 1px black,
+        							inset -1px -1px 1px 1px rgba(255,255,255,.666),
+        							inset 1px 1px 1px 1px rgba(0,0,0,.5);
+        						/* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */}
+a:active{color: #FF0000; /*prevent transitions on click*/transition: none;
+	-webkit-box-shadow: 0px 0px 0 3px #2FE400,
+        							-2px -2px 3px 1px white,
+        							2px 2px 3px 1px black,
+        							inset -1px -1px 2px 1px rgba(255,255,255,.666),
+        							inset 1px 1px 2px 1px rgba(0,0,0,.25);
+        							/* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+	          box-shadow: 0px 0px 0 3px #2FE400,
+        							-2px -2px 3px 1px white,
+        							2px 2px 3px 1px black,
+        							inset -1px -1px 2px 1px rgba(255,255,255,.666),
+        							inset 1px 1px 2px 1px rgba(0,0,0,.25);
+        							/* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera
+*/}
 /*** END links ***/
 
 iframe{width:100%;}
