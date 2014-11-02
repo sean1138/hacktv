@@ -1,0 +1,644 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>PAGE TITLE</title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link href="_reset.css" rel="stylesheet" type="text/css" />
+	<style>
+	body {
+		background:#191919;
+		color:#42CC55;
+	}
+	p {
+		margin-left:8px;
+		margin-right:8px;
+		/*so the link boxes don't get cut off*/
+	}
+	header>img {
+		display:block;
+		margin:0 auto;
+	}
+	footer {
+		border-top:2px solid #6699CC;
+	}
+	.nodots {
+		list-style-type:none;
+	}
+	.twocol, .threecol, .fourcol {
+		overflow:auto;
+		clear:left;
+	}
+	.twocol>.col1, .twocol>.col2 {
+		float:left;
+		width:50%;
+	}
+	.threecol>.col1, .threecol>.col2, .threecol>.col3 {
+		float:left;
+		width:33%;
+	}
+	.fourcol>.col1, .fourcol>.col2, .fourcol>.col3, .fourcol>.col4 {
+		float:left;
+		width:25%;
+	}
+	.logo {
+		display:block;
+		margin:0 auto;
+	}
+	.wtvsidebar {
+		position:fixed;
+		top:0;
+		bottom:0;
+		width:160px;
+		border-right: 0px solid gray;
+		background: #6699cc;
+	}
+	.wtvsiderbarlinks, .wtvsiderbarlinks ul {
+		list-style-type:none;
+		margin:0;
+	}
+	.wtvsiderbarlinks li {
+		margin:0;
+	}
+	.wtvsiderbarlinks>li {
+		padding:.5em;
+		width: 100%;
+		border:1px solid #505050;
+		border-bottom-color:#CDCDCD;
+		border-left:none;
+		border-right:none;
+	}
+	.wtvsiderbarlinks>li:last-child {
+		border-bottom:none;
+	}
+	.wtvsiderbarlinks>li a {
+		display:block;
+	}
+	.wtvmain {
+		margin-left:160px;
+		padding:.25em .5em;
+		height:calc(100% - 36px);
+	}
+	.wtvmain article {
+		margin-bottom:calc(36px + 1em);
+	}
+	ul.inline {
+		font-size:0;
+	}
+	ul.inline li {
+		margin:0;
+		display:inline-block;
+		font-size:1rem;
+	}
+	.inline.li3 li {
+		width:33%;
+		text-align:center;
+	}
+	.wtvfooter {
+		position:fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background:#404040;
+		height:35px;
+		padding-top:7px;
+		padding-bottom:4px;
+		color:#E7CE4A;
+		background-color: #4E4E4E;
+		background-image: linear-gradient(to right, #666666, #333333);
+		border-top:1px solid rgba(255, 255, 255, .5);
+		box-shadow:0 0 0px 1px rgba(0, 0, 0, .5);
+	}
+	.wtvfooter>marquee {
+		background:#000;
+		height:24px;
+		line-height:24px;
+		width:855px;
+		border-radius:8px;
+		margin-left:8px;
+		background-color: #161616;
+		background-image: linear-gradient(to right, #2A2A2A, #000000);
+		text-shadow: 1px 1px 1px #000;
+	}
+	.wtvfooter>img {
+		float:right;
+		margin-right:.5em;
+		margin-top:-2px;
+	}
+	.wtvsidebar, h1, h2 {
+		background-color:#800815;
+	}
+	.scrollArrows {
+		position:absolute;
+		bottom: 6px;
+		right: 56px;
+		height:22px;
+	}
+	#dArr, #uArr {
+		display:inline-block;
+		height:22px;
+		width:25px;
+	}
+	#dArr {
+		background-image:url('i/wtvarrowdown_on.png');
+	}
+	#uArr {
+		background-image:url('i/wtvarrowup_off.png');
+	}
+	</style>
+</head>
+<body>
+	<div class="wtvsidebar">
+		<ul class="wtvsiderbarlinks">
+			<li><img src="images/webtvlogo.png" alt="HackTV logo" class="logo" width="130" height="101">
+			</li>
+			<li>
+				<ul class="inline li3">
+					<li>
+						<a href="http://www.youtube.com/playlist?list=PLhpdZ-X8KO0HCSPD_nO_N7K4pxAuodAsM"><img src="images/social-yt.png" alt="youtube">
+						</a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/106671569969614910911/posts"><img src="../images/social-gp.png" alt="google plus">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/MattiesCarWash"><img src="../images/social-fb.png" alt="facebook">
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li><a target="_blank" href="mailto:GraspYonOx@hotmail.com">E-Mail Me</a>
+			</li>
+			<li><a href="javascript:TURDPopup()">Credits</a>
+			</li>
+			<li><a href="index2.html">Original Site 1998</a>
+			</li>
+			<li>&nbsp;
+				<!-- leave this empty li for the border on bttom to look right//-->
+			</li>
+		</ul>
+	</div>
+	<main class="wtvmain" id="scrolldetect">
+		<header><img src="i/banner2.gif" alt="MattMan69" width="600" height="75">
+			<h1>most important h1 tag title text</h1>
+			<p>wordsandshit... use <strong>strong tag</strong> for bold text dude</p>
+		</header>
+		<article>
+			<section>
+				<h2>section 1 h2 tag titletext</h2>
+				<ul>
+					<li>listitem <a href="#">link</a>
+					</li>
+					<li>listitem: <a href="#">link</a>
+					</li>
+				</ul>
+				<h3>h3 tag - did not style h4 h5 or h6</h3>
+				<ul class="nodots">
+					<li>list items with no dots<a href="#1">link</a>
+					</li>
+					<li><a href="#2">link</a>
+					</li>
+				</ul>
+			</section>
+			<section class="twocol">
+				<h2>section 1 h2 tag titletext - 2 columns</h2>
+				<div class="col1">
+					<p>column 1 text</p>
+				</div>
+				<div class="col2">
+					<p>column 2 text</p>
+				</div>
+			</section>
+			<section class="threecol">
+				<h2>section 1 h2 tag titletext - 3 columns</h2>
+				<div class="col1">
+					<p>column 1 text</p>
+				</div>
+				<div class="col2">
+					<p>column 2 text</p>
+				</div>
+				<div class="col3">
+					<p>column 3 text</p>
+				</div>
+			</section>
+			<section class="fourcol">
+				<h2>section 1 h2 tag titletext - 4 columns</h2>
+				<div class="col1">
+					<p>column 1 text</p>
+				</div>
+				<div class="col2">
+					<p>column 2 text</p>
+				</div>
+				<div class="col3">
+					<p>column 3 text</p>
+				</div>
+				<div class="col4">
+					<p>column 4 text</p>
+				</div>
+			</section>
+			<section>
+				<h2>h2 text</h2>
+				<p>paragraph</p>
+				<table width="400" border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+						<tr>
+							<td width="50%">
+								<p>old school 2 columns via tables</p>
+							</td>
+							<td>
+								<p>set full width on table tag, don't need to set percentage width on every td tag</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>paragraph</p>
+				<table class="data-table" border="1" cellspacing="0" cellpadding="0" summary="SUMMARY">
+					<tbody>
+						<tr>
+							<th>Brand</th>
+							<th>Model</th>
+							<th>Type</th>
+							<th>Modem</th>
+							<th>RAM</th>
+							<th>ROM</th>
+							<th>Storage</th>
+							<th>CPU speed</th>
+							<th>CPU chip</th>
+							<th>
+								<font color="#42CC55">Install Hack</font>
+							</th>
+						</tr>
+						<tr>
+							<td>Sony</td>
+							<td>INT-W100</td>
+							<td>Classic</td>
+							<td>V.34</td>
+							<td>2 MB (2 MiB)</td>
+							<td>2 MB (2 MiB)</td>
+							<td>2 MB</td>
+							<td>112&nbsp;MHz</td>
+							<td>R4640</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Philips</td>
+							<td>MAT-960</td>
+							<td>Classic</td>
+							<td>V.34</td>
+							<td>2 MB</td>
+							<td>2 MB</td>
+							<td>2 MB</td>
+							<td>112&nbsp;MHz</td>
+							<td>R4640</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Sony</td>
+							<td>INT-WJ200</td>
+							<td>Classic (Japan)</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>4 MB</td>
+							<td>1.1 GB</td>
+							<td>150&nbsp;MHz</td>
+							<td>R4640</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Sony</td>
+							<td>INT-W150</td>
+							<td>New Classic</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>2 MB</td>
+							<td>150&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Philips</td>
+							<td>MAT-965</td>
+							<td>New Classic</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>2 MB</td>
+							<td>150&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>RCA</td>
+							<td>RW-2100</td>
+							<td>New Classic</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>2 MB</td>
+							<td>150&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>RCA</td>
+							<td>RM-2100</td>
+							<td>New Classic</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>2 MB</td>
+							<td>150&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td><b><font color="#42CC55">Sony</font></b>
+							</td>
+							<td>INT-W200</td>
+							<td>Plus</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>1.1 GB</td>
+							<td>150&nbsp;MHz</td>
+							<td>R4640</td>
+							<td><b><font color="#42CC55">YES</font></b>
+							</td>
+						</tr>
+						<tr>
+							<td><b><font color="#42CC55">Sony</font></b>
+							</td>
+							<td>INT-W200B</td>
+							<td>Derby Plus</td>
+							<td>V.90 soft modem</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>1.1 GB</td>
+							<td>167&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td><b><font color="#42CC55">YES</font></b>
+							</td>
+						</tr>
+						<tr>
+							<td><b><font color="#42CC55">Philips</font></b>
+							</td>
+							<td>MAT-972</td>
+							<td>Plus</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>1.1 GB</td>
+							<td>150&nbsp;MHz</td>
+							<td>R4640</td>
+							<td><b><font color="#42CC55">YES</font></b>
+							</td>
+						</tr>
+						<tr>
+							<td><b><font color="#42CC55">Philips</font></b>
+							</td>
+							<td>MAT-???</td>
+							<td>Derby Plus</td>
+							<td>V.90 soft modem</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>1.1 GB</td>
+							<td>167&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td><b><font color="#42CC55">YES</font></b>
+							</td>
+						</tr>
+						<tr>
+							<td><b><font color="#42CC55">Samsung</font></b>
+							</td>
+							<td>SIS-100</td>
+							<td>Plus</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>1.1 GB</td>
+							<td>150&nbsp;MHz</td>
+							<td>R4640</td>
+							<td><b><font color="#42CC55">YES</font></b>
+							</td>
+						</tr>
+						<tr>
+							<td><b><font color="#42CC55">Mitsubishi</font></b>
+							</td>
+							<td>RW-2000</td>
+							<td>Plus</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>1.1 GB</td>
+							<td>150&nbsp;MHz</td>
+							<td>R4640</td>
+							<td><b><font color="#42CC55">YES</font></b>
+							</td>
+						</tr>
+						<tr>
+							<td><b><font color="#42CC55">Mitsubishi</font></b>
+							</td>
+							<td>RW-2001</td>
+							<td>Plus</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>1.1 GB</td>
+							<td>150&nbsp;MHz</td>
+							<td>R4640</td>
+							<td><b><font color="#42CC55">YES</font></b>
+							</td>
+						</tr>
+						<tr>
+							<td><b><a href="images/la-z-boy.gif" target="_new">La-Z-Boy</a></b>
+							</td>
+							<td>Leather</td>
+							<td>Plus</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>1.1 GB</td>
+							<td>150&nbsp;MHz</td>
+							<td>R4640</td>
+							<td><b><font color="#42CC55">YES</font></b>
+							</td>
+						</tr>
+						<tr>
+							<td><b><font color="#42CC55">La-Z-Boy</font></b>
+							</td>
+							<td>Fabric</td>
+							<td>Plus</td>
+							<td>V.90</td>
+							<td>8 MB</td>
+							<td>2 MB</td>
+							<td>1.1 GB</td>
+							<td>150&nbsp;MHz</td>
+							<td>R4640</td>
+							<td><b><font color="#42CC55">YES</font></b>
+							</td>
+						</tr>
+						<tr>
+							<td>Sony</td>
+							<td>INT-WJ300</td>
+							<td>Plus (Japan)</td>
+							<td>V.90 soft modem</td>
+							<td>16 MB</td>
+							<td>4 MB</td>
+							<td>1.1 GB</td>
+							<td>167&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>RCA</td>
+							<td>RW-2110</td>
+							<td>New Plus</td>
+							<td>V.90 soft modem</td>
+							<td>16 MB</td>
+							<td>8 MB</td>
+							<td>Flash Disk</td>
+							<td>167&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Sony</td>
+							<td>INT-W250</td>
+							<td>New Plus</td>
+							<td>V.90 soft modem</td>
+							<td>16 MB</td>
+							<td>8 MB</td>
+							<td>Flash Disk</td>
+							<td>167&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>Philips</td>
+							<td>MAT-976</td>
+							<td>New Plus</td>
+							<td>V.90 soft modem</td>
+							<td>16 MB</td>
+							<td>8 MB</td>
+							<td>Flash Disk</td>
+							<td>167&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td><b><font color="#42CC55">Echostar</font></b>
+							</td>
+							<td>Dishplayer 7100</td>
+							<td>DISH tuner</td>
+							<td>V.90 soft modem</td>
+							<td>16 MB</td>
+							<td>4 MB</td>
+							<td>8.6 GB</td>
+							<td>167&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td><b><font color="#42CC55">SEE</font> <a href="http://turdinc.kicks-ass.net/Msntv/WebTV-MAME/echostar2.html">HERE</a></b>
+							</td>
+						</tr>
+						<tr>
+							<td><b><font color="#42CC55">Echostar</font></b>
+							</td>
+							<td>Dishplayer 7200</td>
+							<td>DISH tuner</td>
+							<td>V.90 soft modem</td>
+							<td>16 MB</td>
+							<td>4 MB</td>
+							<td>17.6 GB</td>
+							<td>167&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td><b><font color="#42CC55">SEE</font> <a href="http://turdinc.kicks-ass.net/Msntv/WebTV-MAME/echostar2.html">HERE</a></b>
+							</td>
+						</tr>
+						<tr>
+							<td>RCA</td>
+							<td>UltimateTV</td>
+							<td>DirecTV tuner</td>
+							<td>V.90 soft modem</td>
+							<td>32 MB</td>
+							<td>4 MB</td>
+							<td>40 GB</td>
+							<td>167&nbsp;MHz</td>
+							<td>RM5230</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>RCA</td>
+							<td>RM-4100</td>
+							<td>MSNTV2</td>
+							<td>V.90 / Ethernet</td>
+							<td>128 MB</td>
+							<td>none</td>
+							<td>64 MB</td>
+							<td>733&nbsp;MHz</td>
+							<td>Celeron</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<td>RCA</td>
+							<td>RM-4100 (2)</td>
+							<td>MSNTV2</td>
+							<td>V.90 / Ethernet</td>
+							<td>256 MB</td>
+							<td>none</td>
+							<td>64 MB</td>
+							<td>733&nbsp;MHz</td>
+							<td>Celeron</td>
+							<td>No</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section>
+				<h2>h2 text for new section</h2>
+				<p id="TERMINATIONLETTER"><a href="http://turdinc.kicks-ass.net/Msntv/TOS2.htm">TERMINATION LETTER</a>
+					<br>(Pics. &amp; Text)</p>
+			</section>
+		</article>
+	</main>
+	<div class="wtvfooter">
+		<marquee behavior="" direction="">YO yo yo yo yo yo yo yo yo yo yo</marquee>
+		<div class="scrollArrows" id="derp"><b id="dArr"></b><b id="uArr"></b>
+		</div><img src="i/status.gif" height="26" width="32" alt="heartbeat">
+	</div>
+	<script language="Javascript" type="text/javascript">
+	function TURDPopup() {
+		day = new Date();
+		id = day.getTime();
+		eval('page' + id + ' = window.open("credits.html", "' + id + '", "toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=260,height=525");');
+	}
+	</script>
+	<script>
+	var uparr = document.getElementById("uArr");
+	var darr = document.getElementById("dArr");
+	var div = document.getElementById("scrolldetect");
+	var body = document.body; //IE 'quirks'
+	var document = document.documentElement; //IE with doctype
+	document = (document.clientHeight) ? document : body;
+	window.onscroll = scroll;
+
+	function scroll() {
+		if (window.pageYOffset === 0)
+			{
+				//we're at the top
+				uArr.style.backgroundImage = "url('i/wtvarrowup_off.png')";
+			}
+		else if (window.pageYOffset + window.innerHeight >= document.body.scrollHeight) {
+			// we're at the bottom
+			dArr.style.backgroundImage = "url('i/wtvarrowdown_off.png')";
+		}
+		else if (window.pageYOffset + window.innerHeight <= document.body.scrollHeight) {
+			// we scrolled and we're not at the bottom
+			dArr.style.backgroundImage = "url('i/wtvarrowdown_on.png')";
+			uArr.style.backgroundImage = "url('i/wtvarrowup_on.png')";
+		}
+	}
+	</script>
+</body>
+</html>

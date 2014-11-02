@@ -224,7 +224,7 @@ input:focus:invalid, textarea:focus:invalid {outline: 2px solid blue;}
  * outline:none used with the pseudo-class :hover is to avoid outline when a user clicks on links
  * note that these last rules do not do anything in IE as this browser does not support "outline"
  */
-a{background: transparent;padding:2px;}
+a{background: transparent;padding:2px 6px 4px 2px;}
 a:link {/*color: #0000FF;*/color:#36d5ff;text-decoration:none;}
 a:visited {/*color: #800080;*/color:#9a36ff;text-decoration: none;}
 a:hover {text-decoration: none;}
@@ -267,3 +267,8 @@ audio:not([controls]) {display: none;height: 0;}
 svg:not(:root) {overflow: hidden;}
 
 /****** END Vstrap 0.14.9***/
+
+iframe[width="400"]{width:400px;}
+iframe[width="510"]{width:510px;}
+.data-table{margin:0 auto;color:#e7ce38;border:1px solid white;}
+.data-table td, .data-table th{padding:.125em .25em;border:1px solid white;}

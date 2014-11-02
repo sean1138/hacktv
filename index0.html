@@ -16,21 +16,28 @@
 		vertical-align:top;
 	}
 	.wtvtable {
-		height:calc(100% - 36px);/*makes room for .wtvfooter*/
+		height:calc(100% - 36px);
+		/*makes room for .wtvfooter*/
 	}
 	.wtvside {
 		width:10%;
 		height:95%;
 		background:#6699cc;
 	}
-	.wtvside ul{list-style-type:none;margin:0;margin-left:4px;}
-	.wtvside li{margin:0;}
+	.wtvside ul {
+		list-style-type:none;
+		margin:0;
+		margin-left:4px;
+	}
+	.wtvside li {
+		margin:0;
+	}
 	.logo {
 		display:block;
 		margin:1em auto;
 	}
 	.wtvmain {
-		width:89%;
+		/*width:89%;*/
 		height:95%;
 	}
 	.wtvmain>iframe {
@@ -44,8 +51,8 @@
 		color:#E7CE4A;
 		background-color: #4E4E4E;
 		background-image: linear-gradient(to right, #666666, #333333);
-		border-top:1px solid rgba(255,255,255,.5);
-		box-shadow:0 0 0px 1px rgba(0,0,0,.5);
+		border-top:1px solid rgba(255, 255, 255, .5);
+		box-shadow:0 0 0px 1px rgba(0, 0, 0, .5);
 	}
 	.wtvfooter>marquee {
 		background:#000;
@@ -55,9 +62,8 @@
 		border-radius:8px;
 		margin-left:8px;
 		background-color: #161616;
-	  background-image: linear-gradient(to right, #2A2A2A, #000000);
-	  text-shadow: 1px 1px 1px #000;
-
+		background-image: linear-gradient(to right, #2A2A2A, #000000);
+		text-shadow: 1px 1px 1px #000;
 	}
 	.wtvfooter>img {
 		float:right;
@@ -70,13 +76,18 @@
 	<table class="wtvtable" width="100%" border="0" cellspacing="0" cellpadding="0">
 		<tr>
 			<td class="wtvside"><img src="i/webtvlogo.png" class="logo" width="87" height="67">
-				<hr><p>sidebar</p><ul>
-					<li><a href=#>111</a></li>
-					<li><a href="#">222</a></li>
+				<hr>
+				<p>sidebar</p>
+				<ul>
+					<li><a href=#>111</a>
+					</li>
+					<li><a href="#">222</a>
+					</li>
 					<li>333</li>
 					<li>444</li>
 					<li>555</li>
-				</ul></td>
+				</ul>
+			</td>
 			<td class="wtvmain">
 				<iframe src="index4.html" id="wtvmain" frameborder="0"></iframe>
 			</td>
