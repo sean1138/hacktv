@@ -7,7 +7,7 @@ The WebTV browser had a viewport of 640x480 - try to imagine that resolution on 
 Since I can find video of it it's easier to watch to get an idea of how the WebTV browser worked than try to explain it.
 https://youtu.be/yuvDkIZmU3s?t=3m16s
 
-There was no mouse or other pointer device on WebTV, it was all keyboard navigation via the arrow keys or buttons on a remote control.  Desktop browsers can navigate links via the tab key and it was decided that this functionality was good enough rather than using a script for navigating with the arrow keys exactly the way that it worked in the WebTV browser.
+There was no mouse or other pointer device on WebTV, it was all keyboard navigation via the arrow keys or buttons on a remote control.  Desktop browsers can navigate links via the tab key and it was decided that this functionality was good enough rather than using a script for navigating with the arrow keys exactly the way that it worked in the WebTV browser.  The offical pages (or walled garden depending your opinion) from WebTV/MSNTV always had a fixed sidebar at the left with a scrolling content pane at the right.  The title/status bar was always present at the bottom no matter what website or page you were on.
 
 template.html is the example produced for the client to use and learn how to write modern html from and was intended to be the src of an iframe in a different html file.
 
