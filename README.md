@@ -1,5 +1,4 @@
 # hacktv
-
 Project for a friend that wants to replicate the look and feel of the old WebTV browser in their website.
 
 ## Recreating the WebTV browsing experience
@@ -15,3 +14,7 @@ template2.html includes the frame of the website and the content in one file.
 There were no scrollbars in the WebTV browser, that's what the arrows at the bottom right are for, scroll indicators.  Since he uses firefox he doesn't care about other browsers and these arrows do not work in IE10.  IE11 was not tested but they probably don't work there either.
 
 The animated green heartbeat graph next to the scroll indicator arrows was used to show when there was network activity (downloading) on WebTV.  In this project it's just a looping animation.
+
+index0 and index4 are an earlier version, index4 is the src of an iframe in index0.
+
+The original html can be seen at http://turdinc.kicks-ass.net/Msntv/index2.html
