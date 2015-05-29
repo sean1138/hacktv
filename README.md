@@ -14,4 +14,4 @@ template2.html includes the frame of the website and the content in one file.
 
 There were no scrollbars in the WebTV browser, that's what the arrows at the bottom right are for, scroll indicators.  Since he uses firefox he doesn't care about other browsers and these arrows do not work in IE10.  IE11 was not tested but they probably don't work there either.
 
-The animated green heartbeat graph next to the scroll indicator arrows was used to show when there was network activity (downloading) on WebTV.  In this project it's just a looping animation though.
+The animated green heartbeat graph next to the scroll indicator arrows was used to show when there was network activity (downloading) on WebTV.  In this project it's just a looping animation.
